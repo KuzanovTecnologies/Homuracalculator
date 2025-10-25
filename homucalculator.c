@@ -1,6 +1,16 @@
 #include <stdio.h>
 
-int main(){
+int main (num1){}
+int main (num1){
+int main (num2);
+int main (num3);
+
+
+
+
+   char num1;
+   char num2;
+   char num3;
 
     char operator;
     double num1;
