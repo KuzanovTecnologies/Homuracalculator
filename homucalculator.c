@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-int main (num1){}
 int main (num1){
 int main (num2);
 int main (num3);
