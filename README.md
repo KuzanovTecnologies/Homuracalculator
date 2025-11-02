@@ -1,2 +1,2 @@
-# Homucalculator
-This is Homucalculator 
+# Homuracalculator
+This is Homuracalculator 
