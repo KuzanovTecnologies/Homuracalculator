@@ -1,34 +1,46 @@
 #include <stdio.h>
 
-int main (num1){
-int main (num2);
-int main (num3);
+int main() {
+char operator;
+double first, second;
 
+while (1) {
+printf("\nEnter the operator (+, -, *, /) or x to exit: ");
+scanf(" %c", &operator);
 
+if (operator == 'x' || operator == 'X') {
+printf("Exiting calculator. Goodbye!\n");
+break;
+}
 
+printf("Enter two numbers: ");
+scanf("%lf %lf", &first, &second);
 
-   char num1;
-   char num2;
-   char num3;
+switch (operator) {
+case '+':
+printf("%.2lf + %.2lf = %.2lf\n", first, second, first + second);
+break;
 
-    char operator;
-    double num1;
-    double num2;
-    double result;
+case '-':
+printf("%.2lf - %.2lf = %.2lf\n", first, second, first - second);
+break;
 
-    enum num1;
-    enum num2;
-    enum num3;
+case '*':
+printf("%.2lf * %.2lf = %.2lf\n", first, second, first * second);
+break;
 
-    scanf("operator, &operator");
-    printf("\nEnter an operator: %d\n", operator);
-    
-    scanf("num1, &num1");
-    printf("Enter number 1: %d\n", 1);
-    
-    scanf("num1, &num2");
-    printf("Enter number: %d\n", 2);
+case '/':
+if (second != 0.0)
+printf("%.2lf / %.2lf = %.2lf\n", first, second, first / second);
+else
+printf("Error: Division by zero is not allowed.\n");
+break;
 
-    return 0;
+default:
+printf("Invalid operator.\n");
+break;
+}
+}
 
+return 0;
 }
